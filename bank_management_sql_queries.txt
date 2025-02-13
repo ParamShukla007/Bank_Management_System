@@ -1,0 +1,59 @@
+create database bankmanagementsystem;
+
+use bankmanagementsystem;
+
+create table add_user_details
+(
+	formNo varchar(20),
+    religion varchar(40),
+    category varchar(40),
+    income varchar(40),
+    education varchar(40),
+    occupation varchar(40),
+    pan varchar(40),
+    aadhar varchar(40),
+    senior varchar(40),
+    existing varchar(20)
+);
+
+create table add3_user_details
+(
+	formNo varchar(20),
+    account_type varchar(40),
+    cardNo varchar(40),
+    pinNo varchar(40),
+    facility varchar(100)
+);
+
+create table user_details
+(
+	formNo varchar(20),
+    name varchar(40),
+    fname varchar(40),
+	dob date,
+    gender varchar(40),
+    email varchar(40),
+    marital_status varchar(40),
+    address varchar(40),
+    city varchar(40),
+    state varchar(40),
+    pincode varchar(20),
+    phone_no VARCHAR(20)
+);
+
+create table login
+(
+	formNo varchar(20),
+    cardNo varchar(25),
+    pin varchar(10)
+);
+
+create table bank
+(
+	pin varchar(20),
+    date varchar(20),
+    type varchar(60),
+    amount varchar(40)
+);
+
+
